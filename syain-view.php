@@ -31,7 +31,8 @@ function check(){
     <div>
         <div class="entry left">社員コード</div>
         <div class="entry right">
-            <input required
+            <input class="form-control"
+                required
                 maxlength="4"
                 pattern="[0-9]+"
                 placeholder="9999"
