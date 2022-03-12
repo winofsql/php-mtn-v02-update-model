@@ -8,6 +8,7 @@ require_once("db_connect.php");
 require_once("model.php");
 
 
+// データ表示処理
 if ( $_POST["btn"] == "確認" ) {
 
     $row = check($mysqli);
@@ -35,6 +36,7 @@ if ( $_POST["btn"] == "確認" ) {
     }
 }
 
+// データ更新処理
 if ( $_POST["btn"] == "更新" ) {
 
     update( $mysqli );
@@ -45,4 +47,3 @@ require_once("syain-view.php");
 
 // debug_print();
 
-?>
